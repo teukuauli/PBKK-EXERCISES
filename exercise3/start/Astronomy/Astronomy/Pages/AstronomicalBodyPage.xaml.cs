@@ -32,12 +32,6 @@ public partial class AstronomicalBodyPage : ContentPage
             _ => throw new ArgumentException()
         };
     }
-    public AppShell()
-    {
-        InitializeComponent();
-
-        Routing.RegisterRoute("astronomicalbodydetails", typeof(AstronomicalBodyPage));
-    }
     
     string astroName;
     public string AstroName
