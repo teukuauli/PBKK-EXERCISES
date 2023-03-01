@@ -1,5 +1,5 @@
 namespace Astronomy.Pages;
-
+[QueryProperty(nameof(AstroName), "astroName")]
 public partial class AstronomicalBodyPage : ContentPage
 {
 
@@ -32,4 +32,24 @@ public partial class AstronomicalBodyPage : ContentPage
             _ => throw new ArgumentException()
         };
     }
+    public AppShell()
+    {
+        InitializeComponent();
+
+        Routing.RegisterRoute("astronomicalbodydetails", typeof(AstronomicalBodyPage));
+    }
+    
+    string astroName;
+    public string AstroName
+    {
+        get => astroName;
+        set
+        {
+            astroName = value;
+
+            // this is a custom function to update the UI immediately
+            UpdateAstroBodyUI(astroName);
+        }
+    }
+
 }
