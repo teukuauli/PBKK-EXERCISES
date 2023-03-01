@@ -1,0 +1,10 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Astronomy.Pages.ProfilePage"
+             Title="Profile">
+
+    <StackLayout Padding="10" Spacing="5">
+        <Label Text="Teuku Auli Azhar" />
+        <Label Text="5025201142" />
+    </StackLayout>
+</ContentPage>

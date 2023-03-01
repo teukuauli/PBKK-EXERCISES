@@ -10,19 +10,25 @@
             <Image Source="moon.png"/>
         </Grid>
     </Shell.FlyoutHeader>
-    
-    <FlyoutItem Title="Astronomy" Icon="moon.png">
-        <ShellContent Title="Moon" Icon="moon.png"
+
+    <TabBar>
+        <Tab Title="Astronomy" Icon="moon.png">
+            <ShellContent Title="Moon" Icon="moon.png"
                 ContentTemplate="{DataTemplate local:MoonPhasePage}" />
-        <ShellContent Title="Daylight" Icon="sun.png"
+            <ShellContent Title="Daylight" Icon="sun.png"
             ContentTemplate="{DataTemplate local:SunrisePage}" />
-        <ShellContent Title="Bodies" Icon="comet.png"
+            <ShellContent Title="Bodies" Icon="comet.png"
             ContentTemplate="{DataTemplate local:AstronomicalBodiesPage}"/>
-    </FlyoutItem>
+        </Tab>
 
-    <FlyoutItem Title="About" Icon="question.png">
-        <ShellContent
+        <Tab Title="About" Icon="question.png">
+            <ShellContent
             ContentTemplate="{DataTemplate local:AboutPage}"/>
-    </FlyoutItem>
+        </Tab>
 
+        <Tab Title="Profile" Icon="">
+            <ShellContent
+            ContentTemplate="{DataTemplate local:ProfilePage}"/>
+        </Tab>
+    </TabBar>
 </Shell>
