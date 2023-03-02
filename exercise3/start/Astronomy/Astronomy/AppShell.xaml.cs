@@ -9,5 +9,6 @@ public partial class AppShell : Shell
         InitializeComponent();
 
         Routing.RegisterRoute("astronomicalbodydetails", typeof(AstronomicalBodyPage));
+        Routing.RegisterRoute("profiledetails", typeof(ProfileDetailsPage));
     }
 }

@@ -92,6 +92,12 @@
 	  <Compile Update="Pages\AstronomicalBodiesPage.xaml.cs">
 	    <DependentUpon>AstronomicalBodiesPage.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Pages\ProfilePage.xaml.cs">
+	    <DependentUpon>ProfilePage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\ProfileDetailsPage.xaml.cs">
+	    <DependentUpon>ProfileDetailsPage.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -108,6 +114,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\ProfilePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\ProfileDetailsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\SunrisePage.xaml">

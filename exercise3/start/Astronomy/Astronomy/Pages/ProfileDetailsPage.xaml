@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Astronomy.Pages.ProfileDetailsPage">
+    <ContentPage.Resources>
+    <ResourceDictionary>
+        <Color x:Key="textColor">White</Color>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource textColor}" />
+        </Style>
+    </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid RowSpacing="10" ColumnSpacing="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Image Aspect="AspectFill" Grid.RowSpan="6" Grid.ColumnSpan="2" Source="starfield.png" />
+
+        <Label  x:Name="lblTitle" FontSize="Medium" FontAttributes="Bold" Grid.Row="2" HorizontalOptions="End" />
+
+        <Label x:Name="lblName" FontSize="Medium" Grid.Row="2" Grid.Column="1" />
+        <Label x:Name="lblNrp" FontSize="Medium" Grid.Row="3" Grid.Column="1" />
+    </Grid>
+</ContentPage>
